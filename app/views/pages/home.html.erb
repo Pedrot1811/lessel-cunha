@@ -1,11 +1,76 @@
-<div class="bg-success half-pipe-top p-4">Nome da Marca</div>
+<div class="bg-success d-flex half-pipe-top py-4"><%= image_tag("cunha_main.png",size: "40x40",class: "mx-3 ms-4") %><h1 class="display-5"><strong>Deep Elevation Wedges</strong></h1></div>
 <div class="main-content">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+  <div class="mt-4 mx-4">
+    <div class="row justify-content-between">
+      <div class="col-sm-12 col-lg-7 mb-3">
+        <div class="container bg-success cunha-round container-inline border border-info border-4 py-3 px-3 fs-5">
+          <u>Novidade no Brasil!</u> As cunhas de elevação são anatômicas e desenhadas para auxiliar no processo de cementar coroas e preencher cavidades.
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner cunha-round border border-info border-4">
+            <div class="carousel-item active">
+              <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4 my-2 px-4">
+    <div class="badge cunha p-2 d-grid">
+      <button class="btn rounded-pill border border-success border-4 bg-info py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        Veja o produto!
+      </button>
+    </div>
+  </div>
+  <div class="row justify-content-center my-3 px-4">
+    <div class="badge cunha p-2 d-grid">
+      <button class="btn rounded-pill border border-success border-4 bg-primary py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        Veja o produto!
+      </button>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title " id="offcanvasBottomLabel">Offcanvas bottom</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="bg-success cunha-round border border-primary border-4 p-3 mt-4 mx-4 fs-6">
+        <div class="row">
+          <div class="col-sm-12 col-lg-9">
+            <ul>
+              <div class="my-1"><strong>Quando cementando coroas:</strong></div>
+              <li>As cunhas afastam os dentes temporariamente para facilitar qualquer trabalho.</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo que cimento se agrupe em caroços. </li>
+              <li>As cunhas impedem infiltração de cemento na gengiva.</li>
+            </ul>
+            <ul class="mt-4">
+              <div class="my-1"><strong>Quando preenchendo cavidades:</strong></div>
+              <li>As cunhas vão a fundo no espaço entre dentes e sua superfície lisa e curvada pode substituir uma matriz.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="position-relative bg-success half-pipe-bottom p-4">
+<div class="fixed-bottom position-relative bg-success half-pipe-bottom p-4 mt-5">
   <div class="position-absolute bg-info top-0 end-0 translate-middle rounded-pill p-3">
-    <%= link_to "https://m.uber.com/looking" do %>
+    <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
       <%= image_tag("whatsapp_logo.png",size: "28x28") %>
     <% end %>
   </div>
