@@ -1,13 +1,260 @@
-<div class="bg-success half-pipe-top p-4">Nome da Marca</div>
+<div class="bg-success d-flex half-pipe-top py-4"><%= image_tag("cunha_main.png",size: "40x40",class: "mx-3 ms-4") %><h1 class="display-5"><strong>Deep Elevation Wedges</strong></h1></div>
 <div class="main-content">
-  <h1>Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+  <div class="mt-4 mx-4">
+    <div class="row justify-content-between">
+      <div class="col-sm-12 col-lg-8 mb-3">
+        <div class="row overflow-hidden">
+          <div class="col-12 container bg-success cunha-round container-inline border border-info border-4 py-3 px-3 fs-5">
+            <u>Novidade no Brasil!</u> As cunhas de elevação são anatômicas e desenhadas para auxiliar no processo de cimentar coroas e preencher cavidades.
+          </div>
+          <div class="col-12 my-4"></div>
+          <div id="desktop-marquee" class="col-12 mt-4 pt-5" >
+              <div class="embla justify-content-center" data-controller="marquee">
+                <div class="embla__container d-flex">
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Veja o produto!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-primary py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Mais informações!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Veja o produto!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-primary py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Mais informações!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Veja o produto!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-primary py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Mais informações!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Veja o produto!
+                      </button>
+                    </div>
+                  </div>
+                  <div class="embla__slide">
+                    <div class="badge cunha-desktop p-2 d-grid">
+                      <button class="btn rounded-pill border border-success border-4 bg-primary py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
+                        Mais informações!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner cunha-round border border-info border-4">
+            <div class="carousel-item active">
+              <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-marquee" class="mt-4 my-2 px-4" >
+    <div class="embla justify-content-center" data-controller="marquee">
+      <div class="embla__container d-flex">
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-info py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Veja o produto!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-primary py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Mais informações!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-info py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Veja o produto!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-primary py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Mais informações!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-info py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Veja o produto!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-primary py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Mais informações!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-info py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Veja o produto!
+            </button>
+          </div>
+        </div>
+        <div class="embla__slide">
+          <div class="badge cunha p-2 d-grid">
+            <button class="btn rounded-pill border border-success border-4 bg-primary py-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Mais informações!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+    </div>
+    <div class="offcanvas-body align-middle">
+      <div class="row justify-content-end mx-3">
+        <button type="button" class="btn-close rounded-pill bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="bg-success cunha-round border border-primary border-4 pb-3 mt-5 mx-1 fs-6">
+        <div class="row justify-content-between align-middle">
+          <div class="col-sm-12 col-lg-12 pe-3">
+            <ul>
+              <div class="my-1"><strong>Quando cimentando coroas:</strong></div>
+              <li>As cunhas afastam os dentes temporariamente para facilitar qualquer trabalho.</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo que cimento se agrupe em caroços. </li>
+              <li>As cunhas impedem infiltração de cimento na gengiva.</li>
+            </ul>
+            <div class="row justify-content-between px-3">
+              <div class="col-6">
+                <%= image_tag("all_cunhas_top.png", size: "129x226") %>
+              </div>
+              <div class="col-6">
+                <%= image_tag("all_cunhas_bottom.png", size: "129x226") %>
+              </div>
+            </div>
+            <ul class="mt-4">
+              <div class="my-1"><strong>Quando preenchendo cavidades:</strong></div>
+              <li>As cunhas vão a fundo no espaço entre dentes e sua superfície lisa e curvada pode substituir uma matriz.</li>
+            </ul>
+            <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
+              <div class="d-flex rounded-pill text-center justify-content-evenly bg-info mx-3 my-2 mt-3 py-2">
+                <div></div>
+                <div id="link-text"class="text-body-warning text-decoration-none mx-2">Converse conosco!</div>
+                <%= image_tag("whatsapp_logo.png",size: "28x28", class:"") %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end mx-3 mt-5">
+        <button type="button" class="btn-close rounded-pill bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas w-50 offcanvas-start" tabindex="-1" id="offcanvasDesktop" aria-labelledby="offcanvasDesktopLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasDesktopLabel"></h5>
+    </div>
+    <div class="offcanvas-body align-middle">
+      <div class="mt-5 pt-5"></div>
+      <div class="mt-5"></div>
+      <div class="row justify-content-end mx-3">
+        <button type="button" class="btn-close rounded-pill bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="bg-success cunha-round border border-primary border-4 pb-3 mt-5 mx-1 fs-6">
+        <div class="row justify-content-between align-middle">
+          <div class="col-sm-12 col-lg-12 pe-3">
+            <ul>
+              <div class="my-1"><strong>Quando cimentando coroas:</strong></div>
+              <li>As cunhas afastam os dentes temporariamente para facilitar qualquer trabalho.</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo que cimento se agrupe em caroços. </li>
+              <li>As cunhas impedem infiltração de cimento na gengiva.</li>
+            </ul>
+            <div class="row justify-content-around mx-5 px-5">
+              <div class="col-6">
+                <%= image_tag("all_cunhas_top.png", size: "129x226") %>
+              </div>
+              <div class="col-6">
+                <%= image_tag("all_cunhas_bottom.png", size: "129x226") %>
+              </div>
+            </div>
+            <ul class="mt-4">
+              <div class="my-1"><strong>Quando preenchendo cavidades:</strong></div>
+              <li>As cunhas vão a fundo no espaço entre dentes e sua superfície lisa e curvada pode substituir uma matriz.</li>
+            </ul>
+            <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
+              <div class="row justify-content-center">
+                <div class="d-flex cunha rounded-pill text-center justify-content-between bg-info mx-3 my-2 mt-3 py-2">
+                  <div></div>
+                  <div id="link-text"class="text-body-warning text-decoration-none mx-2">Converse conosco!</div>
+                  <%= image_tag("whatsapp_logo.png",size: "28x28", class:"") %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end mx-3 mt-5">
+        <button type="button" class="btn-close rounded-pill bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="position-relative bg-success half-pipe-bottom p-4">
+<div class="fixed-bottom position-relative bg-success half-pipe-bottom p-4 mt-5">
   <div class="position-absolute bg-info top-0 end-0 translate-middle rounded-pill p-3">
-    <%= link_to "https://m.uber.com/looking" do %>
+    <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
       <%= image_tag("whatsapp_logo.png",size: "28x28") %>
     <% end %>
   </div>
-  about e whatsapp
+  <div class="fs-3 ms-5">Sobre</div>
+  
 </div>
