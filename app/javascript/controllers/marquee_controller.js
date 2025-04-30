@@ -1,15 +1,14 @@
 import { Controller } from "@hotwired/stimulus"
-import EmblaCarousel from 'embla-carousel'
-import Autoplay from 'embla-carousel-autoplay'
-import Autoscroll from 'embla-carousel-auto-scroll'
+import EmblaCarousel2 from 'embla-carousel'
+import Autoscroll2 from 'embla-carousel-auto-scroll'
 
 // Connects to data-controller="marquee"
 export default class extends Controller {
   connect() {
-    const emblaNode = this.element
-    const emblaApi = EmblaCarousel(emblaNode, { loop: true }, [
-      Autoscroll({ speed: 2 }, { startDelay: 20 }, { stopOnInteraction: true }, { stopOnMouseEnter: true }, { stopOnFocusIn: false })
+    const emblaNode2 = this.element
+    const emblaApi2 = EmblaCarousel2(emblaNode2, { loop: true }, [
+      Autoscroll2({ speed: 1 }, { direction: 'forward' }, { startDelay: 20 }, { stopOnInteraction: true }, { stopOnMouseEnter: true }, { stopOnFocusIn: false })
     ])
-    console.log(emblaApi.slideNodes())
+    console.log(emblaApi2.slideNodes())
   }
 }
