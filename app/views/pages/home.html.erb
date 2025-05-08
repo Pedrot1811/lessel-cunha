@@ -4,10 +4,9 @@
     <div class="row justify-content-between">
       <div class="col-sm-12 col-lg-8 mb-3">
         <div class="row overflow-hidden">
-          <div class="col-12 container bg-success cunha-round container-inline border border-info border-4 py-3 px-3 fs-5">
-            <u>Novidade no Brasil!</u> As cunhas de elevação são anatômicas e desenhadas para auxiliar no processo de cimentar coroas e preencher cavidades.
+          <div class="col-12 container bg-success cunha-round container-inline border border-info border-4 py-3 px-3 fs-5 text-center">
+            <u>Novidade no Brasil!</u> As cunhas de elevação são anatômicas e desenhadas para auxiliar no processo de restauração. Entregando resultado biologicamente compatível!
           </div>
-          <div class="col-12 my-4"></div>
           <div id="desktop-marquee" class="col-12 mt-4 pt-5" >
               <div class="embla justify-content-center" data-controller="marquee">
                 <div class="embla__container d-flex">
@@ -73,23 +72,16 @@
         </div>
       </div>
       <div class="col-sm-12 col-lg-4">
-        <div id="carousel" class="carousel slide">
-          <div class="carousel-inner cunha-round border border-info border-4">
-            <div class="carousel-item active">
-              <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
-            </div>
-            <div class="carousel-item">
-              <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="cunha-round bg-success border border-info border-4 text-center fs-4 mb-3">
+        Veja em ação!</div>
+        <div class="border border-info border-4">
+          <iframe
+            width="100%" height="300px" src="https://www.youtube-nocookie.com/embed/ZFxIwytCUH0?si=geTUzySVG3u1xjil"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
@@ -168,23 +160,31 @@
         <div class="row justify-content-between align-middle">
           <div class="col-sm-12 col-lg-12 pe-3">
             <ul>
-              <div class="my-1"><strong>Quando cimentando coroas:</strong></div>
-              <li>As cunhas afastam os dentes temporariamente para facilitar qualquer trabalho.</li>
-              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo que cimento se agrupe em caroços. </li>
-              <li>As cunhas impedem infiltração de cimento na gengiva.</li>
+              <div class="my-1"><strong>Em uma restauração:</strong></div>
+              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
+              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
             </ul>
             <div class="row justify-content-between px-3">
-              <div class="col-6">
-                <%= image_tag("all_cunhas_top.png", size: "129x226") %>
-              </div>
-              <div class="col-6">
-                <%= image_tag("all_cunhas_bottom.png", size: "129x226") %>
+              <div id="carousel" class="carousel slide">
+                <div class="carousel-inner cunha-round border border-info border-4">
+                  <div class="carousel-item active">
+                    <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-            <ul class="mt-4">
-              <div class="my-1"><strong>Quando preenchendo cavidades:</strong></div>
-              <li>As cunhas vão a fundo no espaço entre dentes e sua superfície lisa e curvada pode substituir uma matriz.</li>
-            </ul>
             <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
               <div class="d-flex rounded-pill text-center justify-content-evenly bg-info mx-3 my-2 mt-3 py-2">
                 <div></div>
@@ -214,23 +214,31 @@
         <div class="row justify-content-between align-middle">
           <div class="col-sm-12 col-lg-12 pe-3">
             <ul>
-              <div class="my-1"><strong>Quando cimentando coroas:</strong></div>
-              <li>As cunhas afastam os dentes temporariamente para facilitar qualquer trabalho.</li>
-              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo que cimento se agrupe em caroços. </li>
-              <li>As cunhas impedem infiltração de cimento na gengiva.</li>
+              <div class="my-1"><strong>Em uma restauração:</strong></div>
+              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
+              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
             </ul>
             <div class="row justify-content-around mx-5 px-5">
-              <div class="col-6">
-                <%= image_tag("all_cunhas_top.png", size: "129x226") %>
-              </div>
-              <div class="col-6">
-                <%= image_tag("all_cunhas_bottom.png", size: "129x226") %>
+              <div id="carousel" class="carousel slide">
+                <div class="carousel-inner cunha-round border border-info border-4">
+                  <div class="carousel-item active">
+                    <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-            <ul class="mt-4">
-              <div class="my-1"><strong>Quando preenchendo cavidades:</strong></div>
-              <li>As cunhas vão a fundo no espaço entre dentes e sua superfície lisa e curvada pode substituir uma matriz.</li>
-            </ul>
             <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
               <div class="row justify-content-center">
                 <div class="d-flex cunha rounded-pill text-center justify-content-between bg-info mx-3 my-2 mt-3 py-2">
@@ -256,5 +264,5 @@
     <% end %>
   </div>
   <div class="fs-3 ms-5">Sobre</div>
-  
+
 </div>
