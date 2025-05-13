@@ -219,20 +219,21 @@
       <div class="bg-success cunha-round border border-primary border-4 pb-3 mt-5 mx-1 fs-6">
         <div class="row justify-content-between align-middle">
           <div class="col-sm-12 col-lg-12 pe-3">
-            <ul>
-              <div class="my-1"><strong>Em uma restauração:</strong></div>
-              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
-              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
-              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
-            </ul>
+            <div class="ms-4 mt-3"><h2>Caso clínico</h2></div>
             <div class="row justify-content-around mx-5 px-5">
               <div id="carousel" class="carousel slide p-5">
                 <div class="carousel-inner cunha-round border border-info border-4">
                   <div class="carousel-item active">
-                    <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+                    <%= image_tag("caso_preparo_legenda.png", class:"img-fluid d-block") %>
                   </div>
                   <div class="carousel-item">
-                    <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+                    <%= image_tag("caso_cunha_DME_legenda.png", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("caso_resina_legenda.png", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("caso_final_legenda.png", class:"img-fluid d-block") %>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -245,6 +246,12 @@
                 </button>
               </div>
             </div>
+            <ul>
+              <div class="my-1"><strong>Em uma restauração:</strong></div>
+              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
+              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
+            </ul>
             <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
               <div class="row justify-content-center">
                 <div class="d-flex cunha rounded-pill text-center justify-content-between bg-info mx-3 my-2 mt-3 py-2">
@@ -263,7 +270,7 @@
     </div>
   </div>
 </div>
-<div class="bg-success fixed-bottom position-relative half-pipe-bottom p-4 mt-5">
+<div class="bg-success fixed-bottom half-pipe-bottom p-4 mt-5">
   <div class="position-absolute bg-info top-0 end-0 translate-middle rounded-pill p-3">
     <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
       <%= image_tag("whatsapp_logo.png",size: "28x28") %>
