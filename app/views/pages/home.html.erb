@@ -13,7 +13,7 @@
                   <div class="embla__slide">
                     <div class="badge cunha-desktop p-2 d-grid">
                       <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
-                        Clique aqui para um caso clínico!
+                        Veja um caso clínico!
                       </button>
                     </div>
                   </div>
@@ -41,7 +41,7 @@
                   <div class="embla__slide">
                     <div class="badge cunha-desktop p-2 d-grid">
                       <button class="btn rounded-pill border border-success border-4 bg-info py-4 fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDesktop" aria-controls="offcanvasDesktop">
-                        Clique aqui para um caso clínico!
+                        Veja um caso clínico!
                       </button>
                     </div>
                   </div>
@@ -157,20 +157,21 @@
       <div class="bg-success cunha-round border border-primary border-4 pb-3 mt-5 mx-1 fs-6">
         <div class="row justify-content-between align-middle">
           <div class="col-sm-12 col-lg-12 pe-3">
-            <ul>
-              <div class="my-1"><strong>Em uma restauração:</strong></div>
-              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
-              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
-              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
-            </ul>
+            <div class="ms-4 mt-3"><h2>Caso clínico</h2></div>
             <div class="row justify-content-between px-3">
               <div id="carousel1" class="carousel slide">
-                <div class="carousel-inner cunha-round border border-info border-4">
+                <div class="carousel-inner border border-info border-4">
                   <div class="carousel-item active">
-                    <%= image_tag("exemplo_sem_cunha.webp", class:"img-fluid d-block") %>
+                    <%= image_tag("caso_preparo_legenda.png", class:"img-fluid d-block") %>
                   </div>
                   <div class="carousel-item">
-                    <%= image_tag("exemplo_com_cunha.webp", class:"img-fluid d-block") %>
+                    <%= image_tag("caso_cunha_DME_legenda.png", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("caso_resina_legenda.png", class:"img-fluid d-block") %>
+                  </div>
+                  <div class="carousel-item">
+                    <%= image_tag("caso_final_legenda.png", class:"img-fluid d-block") %>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -183,6 +184,13 @@
                 </button>
               </div>
             </div>
+            <ul>
+              <div class="my-1"><strong>Em uma restauração:</strong></div>
+              <li>As cunhas são fáceis e rápidas de instalar e garantem estabilidade para um trabalho seguro</li>
+              <li>As cunhas bloqueiam o espaço entre os dentes, impedindo extravasamentos cervicoproximais. </li>
+              <li>Com suas faces lisas, as cunhas permitem fácil instalação de matrizes tradicionais.</li>
+            </ul>
+
             <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
               <div class="d-flex rounded-pill text-center justify-content-evenly bg-info mx-3 my-2 mt-3 py-2">
                 <div></div>
@@ -255,7 +263,7 @@
     </div>
   </div>
 </div>
-<div class="bg-success position-relative half-pipe-bottom p-4 mt-5">
+<div class="bg-success fixed-bottom position-relative half-pipe-bottom p-4 mt-5">
   <div class="position-absolute bg-info top-0 end-0 translate-middle rounded-pill p-3">
     <%= link_to "https://wa.me/5511970220015?text=Oi!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cunha" do %>
       <%= image_tag("whatsapp_logo.png",size: "28x28") %>
