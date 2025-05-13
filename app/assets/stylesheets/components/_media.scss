@@ -1,10 +1,19 @@
 @media(max-width:850px){
   #desktop-marquee{
-      display:none;
+    display:none;
+  }
+  #video {
+    height: 300px;
   }
 }
 @media(min-width:850px){
-  #mobile-marquee{
-      display:none;
+  #mobile-marquee {
+    display:none;
+  }
+  #bottom-half-pipe {
+    position: absolute !important;
+  }
+  #video {
+    height: 520px;
   }
 }
